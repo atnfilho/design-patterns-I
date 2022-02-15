@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var Orcamento_1 = require("./orcamento/Orcamento");
+var CalculadoraDeDesconto_1 = require("./desconto/CalculadoraDeDesconto");
+var orcamento1 = new Orcamento_1["default"](200, 6);
+orcamento1.aplicarDescontoExtra();
+console.log(orcamento1);
+orcamento1.aprovar();
+orcamento1.aprovar();
+console.log(orcamento1);
+var orcamento2 = new Orcamento_1["default"](1000, 1);
+var calculadora = new CalculadoraDeDesconto_1["default"]();
+console.log(calculadora.calcular(orcamento1));
+console.log(calculadora.calcular(orcamento2));
